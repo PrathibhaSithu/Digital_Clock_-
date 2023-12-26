@@ -64,3 +64,30 @@ body{
     overflow: hidden;
     background: var(--bg);
 }
+.dark-light{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+    width: 60px;
+    height: 60px;
+    right: 50px;
+    box-shadow: var(--bx03);
+    border-radius: 50%;
+}
+.dark-light i{
+    position: absolute;
+    color: var(--c);
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.dark-light i.sun{
+    opacity: 0;
+    pointer-events: none;
+}
+.dark-light.active i.sun{
+    opacity: 1;
+    pointer-events: auto;
+}
