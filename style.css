@@ -91,3 +91,41 @@ body{
     opacity: 1;
     pointer-events: auto;
 }
+.dark-light.active i.sun{
+    opacity: 0;
+    pointer-events: none;
+}
+section{
+    position: relative;
+    background: var(--bg);
+    border-radius: 20px;
+    border-top-left-radius: 255px;
+    border-top-right-radius: 225px;
+    box-shadow: var(--bx);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#time{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    background: var(--bg);
+    border-radius: 50%;
+    box-shadow: var(--bx);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#time .circle{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#time .circle svg{
+    position: relative;
+    transform: rotate(270deg);
+}
