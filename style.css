@@ -91,9 +91,9 @@ body{
     opacity: 1;
     pointer-events: auto;
 }
-.dark-light.active i.sun{
-    opacity: 0;
+.dark-light.active i.moon{
     pointer-events: none;
+    opacity: 0;
 }
 section{
     position: relative;
