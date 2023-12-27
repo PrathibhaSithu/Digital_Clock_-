@@ -129,3 +129,15 @@ section{
     position: relative;
     transform: rotate(270deg);
 }
+#time .circle:nth-child(1) svg{
+    width: 250px;
+    height: 250px;
+}
+#time .circle:nth-child(2) svg{
+    width: 210px;
+    height: 210px;
+}
+#time .circle:nth-child(3) svg{
+    width: 210px;
+    height: 210px;
+}
