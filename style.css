@@ -153,13 +153,38 @@ section{
     stroke-dashoffset: 760;
     stroke: var(--circle_s);
 }
-#time .circle:nth-child(1) svg circle{
-    stroke-dasharray: 760;
-    stroke-dashoffset: 760;
-    stroke: var(--circle_s);
+#time .circle:nth-child(2) svg circle{
+    stroke-dasharray: 630;
+    stroke-dashoffset: 630;
+    stroke: var(--circle_m);
 }
-#time .circle:nth-child(1) svg circle{
-    stroke-dasharray: 760;
-    stroke-dashoffset: 760;
-    stroke: var(--circle_s);
+#time .circle:nth-child(3) svg circle{
+    stroke-dasharray: 510;
+    stroke-dashoffset: 510;
+    stroke: var(--circle_h);
+}
+#time .circle .dots{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+#time .circle:nth-child(1) .dots::before,
+#time .circle:nth-child(2) .dots::before,
+#time .circle:nth-child(3) .dots::before{
+    content: '';
+    position: absolute;
+    top: -3px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--circle_s);
+    box-shadow: 
+    0 0 20px var(--circle_s),
+    0 0 40px var(--circle_s),
+    0 0 60px var(--circle_s),
+    0 0 80px var(--circle_s);
 }
