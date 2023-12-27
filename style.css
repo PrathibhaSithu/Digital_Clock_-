@@ -188,3 +188,82 @@ section{
     0 0 60px var(--circle_s),
     0 0 80px var(--circle_s);
 }
+#time .circle:nth-child(2) .dots::before{
+    background: var(--circle_m);
+    box-shadow: 
+    0 0 20px var(--circle_m),
+    0 0 40px var(--circle_m),
+    0 0 60px var(--circle_m),
+    0 0 80px var(--circle_m);
+}
+#time .circle:nth-child(3) .dots::before{
+    background: var(--circle_h);
+    box-shadow: 
+    0 0 20px var(--circle_h),
+    0 0 40px var(--circle_h),
+    0 0 60px var(--circle_h),
+    0 0 80px var(--circle_h);
+}
+.clk{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clk span{
+    position: absolute;
+    inset: 30px;
+    color: #777777;
+    text-align: center;
+    transform: rotate(calc(30deg * var(--i)));
+}
+.clk span b{
+    font-size: 2rem;
+    font-weight: 600;
+    display: inline-block;
+    transform: rotate(calc(-30deg * var(--i)));
+}
+.timeBx{
+    margin-bottom: 40px;
+    display: flex;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-size: 600;
+    gap: 20px;
+    border: 2px solid var(--brd);
+    border-radius: 40px;
+    box-shadow: var(--bx02);
+}
+.timeBx #hours::after,
+.timeBx #minutes::after{
+    content: '';
+    position: absolute;
+}
+.timeBx #hours{
+    color: var(--circle_h);
+    text-shadow: 0 0 10px var(--circle_h),
+        0 0 20px var(--circle_h);
+}
+.timeBx #minutes{
+    color: var(--circle_m);
+    text-shadow: 0 0 10px var(--circle_m),
+        0 0 20px var(--circle_m);
+}
+.timeBx #seconds{
+    color: var(--circle_s);
+    text-shadow: 0 0 10px var(--circle_s),
+        0 0 20px var(--circle_s);
+}
+.ap{
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--c);
+    text-shadow: 0 0 10px var(--c),
+        0 0 20px var(--c);
+}
